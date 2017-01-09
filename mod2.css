@@ -3,10 +3,11 @@
 	font-family: Helvetica;
 	box-sizing: border-box;
 	padding: 0px;
-	}
+
+}
 
 h1 {
-	font-size: 150%;
+	font-size: 200%;
 	margin-bottom: 20px;
 	margin-top: 30px;
 	text-align: center;
@@ -14,37 +15,43 @@ h1 {
 }
 
 h2 {
-	font-size: 14px;
-	padding: 3px;
+	text-align: center;
+	font-size: 18px;
+	padding: 5px;
 	border-left: solid black;
 	border-bottom: solid black;
-	margin-top: 0px;
+	margin: 0px;
 	float: right;
+	width: 80px;
 
 }
 
 p {
-	font-size: 10px;
-	width: auto;
-	height: auto;
+	font-size: 14px;
+	font-weight: normal;
     color: black;
 	background-color: lightgray;
 	position: relative;
 	margin-top: 35px;
 	padding: 5px;
 	width: 100%;
+	float: left;
+	clear: both;
 
 }
 /****Responsive Framework****/
+.container {
+	width: 100%;
+}
 .row {
 	width: 100%;
 }
 .col {
 	position: relative;
+	
 }	
 
 #chicken {
-	text-align: right;
 	background-color: red;
 	color: black;
 	display: inline-block;
@@ -53,14 +60,12 @@ p {
 }
 
 #beef {
-	text-align: right;
 	background-color: brown;
 	color: lightgray;
 	display: inline-block;
 
 }
 #sushi {
-	text-align: right;
 	background-color: orange;
 	color: black;
 	display: inline-block;
@@ -76,6 +81,8 @@ p {
 	border: 4px solid black;
 	background-color: lightgray;
 	margin: 2px;
+	margin-left: 70px;
+
 
 			}
 	.col-lg-1 {
@@ -126,6 +133,7 @@ p {
 		border: 4px solid black;
 		background-color: lightgray;
 		margin: 2px;
+		margin-left: 70x;
 	}
 	.col-md-1 {
 		width: 8.33%;
@@ -166,7 +174,7 @@ p {
 }
 
 /****equal or less than 767px****/
-@media (max-width: 767px) {
+@media (max-width: 767px) and (min-width: 0px) {
 	 .col-sm-1, .col-sm-2, .col-sm-3, 
 	 .col-sm-4, .col-sm-5, .col-sm-6, 
 	 .col-sm-7, .col-sm-8, .col-sm-9,
@@ -174,7 +182,8 @@ p {
 		float: left;
 		border: 4px solid black;
 		background-color: lightgray;
-		margin: 2px;
+		margin: 2px 2px 2px 2px;
+
 	}
 	.col-sm-1 {
 		width: 8.33%;
